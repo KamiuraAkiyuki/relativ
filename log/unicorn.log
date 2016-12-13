@@ -1,0 +1,44 @@
+I, [2016-12-13T04:39:55.966540 #2550]  INFO -- : Refreshing Gem list
+I, [2016-12-13T04:39:56.931087 #2550]  INFO -- : listening on addr=/tmp/unicorn.sock fd=12
+I, [2016-12-13T04:39:57.057525 #2585]  INFO -- : worker=0 ready
+I, [2016-12-13T04:39:57.059008 #2550]  INFO -- : master process ready
+I, [2016-12-13T04:39:57.060941 #2587]  INFO -- : worker=1 ready
+I, [2016-12-13T04:39:57.062159 #2590]  INFO -- : worker=2 ready
+Unicorn master intercepting TERM and sending myself QUIT instead
+I, [2016-12-13T04:41:51.623994 #2550]  INFO -- : reaped #<Process::Status: pid 2585 exit 0> worker=0
+I, [2016-12-13T04:41:51.624118 #2550]  INFO -- : reaped #<Process::Status: pid 2587 exit 0> worker=1
+I, [2016-12-13T04:41:51.624149 #2550]  INFO -- : reaped #<Process::Status: pid 2590 exit 0> worker=2
+I, [2016-12-13T04:41:51.624352 #2550]  INFO -- : master complete
+I, [2016-12-13T04:47:06.160591 #2761]  INFO -- : Refreshing Gem list
+I, [2016-12-13T04:47:07.125107 #2761]  INFO -- : unlinking existing socket=/tmp/unicorn.sock
+I, [2016-12-13T04:47:07.125236 #2761]  INFO -- : listening on addr=/tmp/unicorn.sock fd=14
+I, [2016-12-13T04:47:07.210640 #2769]  INFO -- : worker=0 ready
+I, [2016-12-13T04:47:07.212619 #2761]  INFO -- : master process ready
+I, [2016-12-13T04:47:07.215866 #2774]  INFO -- : worker=2 ready
+I, [2016-12-13T04:47:07.216207 #2772]  INFO -- : worker=1 ready
+I, [2016-12-13T04:47:31.574177 #2761]  INFO -- : reaped #<Process::Status: pid 2769 exit 0> worker=0
+I, [2016-12-13T04:47:31.577156 #2761]  INFO -- : reaped #<Process::Status: pid 2772 exit 0> worker=1
+I, [2016-12-13T04:47:31.577209 #2761]  INFO -- : reaped #<Process::Status: pid 2774 exit 0> worker=2
+I, [2016-12-13T04:47:31.577414 #2761]  INFO -- : master complete
+I, [2016-12-13T05:02:13.378666 #3000]  INFO -- : Refreshing Gem list
+I, [2016-12-13T05:02:14.313396 #3000]  INFO -- : unlinking existing socket=/tmp/unicorn.sock
+I, [2016-12-13T05:02:14.313514 #3000]  INFO -- : listening on addr=/tmp/unicorn.sock fd=14
+I, [2016-12-13T05:02:14.406144 #3008]  INFO -- : worker=0 ready
+I, [2016-12-13T05:02:14.408190 #3000]  INFO -- : master process ready
+I, [2016-12-13T05:02:14.409988 #3011]  INFO -- : worker=1 ready
+I, [2016-12-13T05:02:14.411389 #3013]  INFO -- : worker=2 ready
+I, [2016-12-13T05:03:26.344209 #3000]  INFO -- : reaped #<Process::Status: pid 3008 exit 0> worker=0
+I, [2016-12-13T05:03:26.347327 #3000]  INFO -- : reaped #<Process::Status: pid 3011 exit 0> worker=1
+I, [2016-12-13T05:03:26.347376 #3000]  INFO -- : reaped #<Process::Status: pid 3013 exit 0> worker=2
+I, [2016-12-13T05:03:26.347519 #3000]  INFO -- : master complete
+I, [2016-12-13T05:03:32.198131 #3101]  INFO -- : Refreshing Gem list
+I, [2016-12-13T05:03:33.133955 #3101]  INFO -- : unlinking existing socket=/tmp/unicorn.sock
+I, [2016-12-13T05:03:33.134086 #3101]  INFO -- : listening on addr=/tmp/unicorn.sock fd=14
+I, [2016-12-13T05:03:33.265779 #3109]  INFO -- : worker=0 ready
+I, [2016-12-13T05:03:33.268092 #3101]  INFO -- : master process ready
+I, [2016-12-13T05:03:33.269680 #3112]  INFO -- : worker=1 ready
+I, [2016-12-13T05:03:33.272044 #3114]  INFO -- : worker=2 ready
+I, [2016-12-13T05:03:47.326477 #3101]  INFO -- : reaped #<Process::Status: pid 3109 exit 0> worker=0
+I, [2016-12-13T05:03:47.326601 #3101]  INFO -- : reaped #<Process::Status: pid 3112 exit 0> worker=1
+I, [2016-12-13T05:03:47.326644 #3101]  INFO -- : reaped #<Process::Status: pid 3114 exit 0> worker=2
+I, [2016-12-13T05:03:47.326794 #3101]  INFO -- : master complete
