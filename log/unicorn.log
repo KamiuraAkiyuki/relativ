@@ -49,3 +49,10 @@ I, [2016-12-13T14:52:42.552053 #3560]  INFO -- : worker=0 ready
 I, [2016-12-13T14:52:42.554002 #3552]  INFO -- : master process ready
 I, [2016-12-13T14:52:42.556907 #3565]  INFO -- : worker=2 ready
 I, [2016-12-13T14:52:42.555362 #3563]  INFO -- : worker=1 ready
+bundler: failed to load command: unicorn_rails (/home/vagrant/.rbenv/versions/2.3.3/bin/unicorn_rails)
+ArgumentError: Already running on PID:3552 (or pid=/tmp/unicorn.pid is stale)
+  /home/vagrant/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:195:in `pid='
+  /home/vagrant/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:127:in `start'
+  /home/vagrant/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/unicorn-5.2.0/bin/unicorn_rails:209:in `<top (required)>'
+  /home/vagrant/.rbenv/versions/2.3.3/bin/unicorn_rails:22:in `load'
+  /home/vagrant/.rbenv/versions/2.3.3/bin/unicorn_rails:22:in `<top (required)>'
