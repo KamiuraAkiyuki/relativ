@@ -24,8 +24,6 @@ test:
         - sudo cp geckodriver /usr/local/bin/
         - echo "-----start test-----"
     override:
-        - bundle exec rake spec/
-            environment:
-                RAILS_ENV: test
+        - bundle exec rspec spec/features/knowledge_spec.rb
     post:
         - echo "-----end test-----"

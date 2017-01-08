@@ -1,0 +1,20 @@
+  [1m[35m (39.4ms)[0m  [1m[35mDROP DATABASE IF EXISTS `test_db`[0m
+  [1m[35m (11.0ms)[0m  [1m[35mCREATE DATABASE `test_db` DEFAULT CHARACTER SET `utf8`[0m
+  [1m[35m (41.0ms)[0m  [1m[35mCREATE TABLE `knowledges` (`id` int AUTO_INCREMENT PRIMARY KEY, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci[0m
+  [1m[35m (22.6ms)[0m  [1m[35mCREATE TABLE `md_notes` (`id` int AUTO_INCREMENT PRIMARY KEY, `title` varchar(255), `content` text, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci[0m
+  [1m[35m (9.4ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) PRIMARY KEY) ENGINE=InnoDB[0m
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT version FROM `schema_migrations`[0m
+  [1m[35m (14.5ms)[0m  [1m[32mINSERT INTO `schema_migrations` (version) VALUES ('20170108094041')[0m
+  [1m[35m (3.5ms)[0m  [1m[32mINSERT INTO schema_migrations (version) VALUES ('20161215141808');
+
+[0m
+  [1m[35m (45.2ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) PRIMARY KEY, `value` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[36mActiveRecord::InternalMetadata Load (8.4ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'test', '2017-01-08 10:26:29', '2017-01-08 10:26:29')[0m
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
