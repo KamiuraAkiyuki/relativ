@@ -3,7 +3,7 @@ machine:
     hosts:
         dev.relativ.com: 127.0.0.1
     ruby:
-        version: 2.3.0
+        version: 2.3.3
     java:
         version: openjdk7
 dependencies:
