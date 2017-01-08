@@ -56,3 +56,32 @@ ArgumentError: Already running on PID:3552 (or pid=/tmp/unicorn.pid is stale)
   /home/vagrant/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/unicorn-5.2.0/bin/unicorn_rails:209:in `<top (required)>'
   /home/vagrant/.rbenv/versions/2.3.3/bin/unicorn_rails:22:in `load'
   /home/vagrant/.rbenv/versions/2.3.3/bin/unicorn_rails:22:in `<top (required)>'
+I, [2016-12-15T12:08:00.242754 #4863]  INFO -- : Refreshing Gem list
+I, [2016-12-15T12:08:01.641640 #4863]  INFO -- : unlinking existing socket=/tmp/unicorn.sock
+I, [2016-12-15T12:08:01.643830 #4863]  INFO -- : listening on addr=/tmp/unicorn.sock fd=14
+I, [2016-12-15T12:08:01.822503 #4871]  INFO -- : worker=0 ready
+I, [2016-12-15T12:08:01.824634 #4863]  INFO -- : master process ready
+I, [2016-12-15T12:08:01.827464 #4876]  INFO -- : worker=2 ready
+I, [2016-12-15T12:08:01.826096 #4874]  INFO -- : worker=1 ready
+Unicorn worker intercepting TERM and doing nothing. Wait for master to send QUIT
+Unicorn worker intercepting TERM and doing nothing. Wait for master to send QUIT
+Unicorn worker intercepting TERM and doing nothing. Wait for master to send QUIT
+Unicorn master intercepting TERM and sending myself QUIT instead
+I, [2016-12-15T14:29:13.819937 #4863]  INFO -- : reaped #<Process::Status: pid 4874 exit 0> worker=1
+I, [2016-12-15T14:29:13.825625 #4863]  INFO -- : reaped #<Process::Status: pid 4876 exit 0> worker=2
+I, [2016-12-15T14:29:14.056278 #4863]  INFO -- : reaped #<Process::Status: pid 4871 exit 0> worker=0
+I, [2016-12-15T14:29:14.059076 #4863]  INFO -- : master complete
+I, [2016-12-15T14:31:06.399335 #3779]  INFO -- : Refreshing Gem list
+I, [2016-12-15T14:31:08.744316 #3779]  INFO -- : unlinking existing socket=/tmp/unicorn.sock
+I, [2016-12-15T14:31:08.745053 #3779]  INFO -- : listening on addr=/tmp/unicorn.sock fd=14
+I, [2016-12-15T14:31:09.007577 #3779]  INFO -- : master process ready
+I, [2016-12-15T14:31:09.009506 #3788]  INFO -- : worker=0 ready
+I, [2016-12-15T14:31:09.011939 #3793]  INFO -- : worker=2 ready
+I, [2016-12-15T14:31:09.012979 #3790]  INFO -- : worker=1 ready
+bundler: failed to load command: unicorn_rails (/home/vagrant/.rbenv/versions/2.3.3/bin/unicorn_rails)
+ArgumentError: Already running on PID:3779 (or pid=/tmp/unicorn.pid is stale)
+  /home/vagrant/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:195:in `pid='
+  /home/vagrant/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:127:in `start'
+  /home/vagrant/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/unicorn-5.2.0/bin/unicorn_rails:209:in `<top (required)>'
+  /home/vagrant/.rbenv/versions/2.3.3/bin/unicorn_rails:22:in `load'
+  /home/vagrant/.rbenv/versions/2.3.3/bin/unicorn_rails:22:in `<top (required)>'

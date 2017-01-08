@@ -1,0 +1,1 @@
+json.partial! "md_notes/md_note", md_note: @md_note

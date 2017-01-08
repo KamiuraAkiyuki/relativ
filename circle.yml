@@ -1,5 +1,7 @@
 machine:
     timezone: Asia/Tokyo
+    hosts:
+        dev.activo.com: 127.0.0.1
     ruby:
         version: 2.3.0
     java:
@@ -8,6 +10,7 @@ dependencies:
     override:
         - bundle install:
             timeout: 180
+
 database:
     pre:
         - mv config/database.yml.ci config/database.yml
@@ -15,7 +18,15 @@ database:
         - bundle exec rake db:create db:schema:load RAILS_ENV=test
         - bundle exec rake db:migrate RAILS_ENV=test
 test:
-  override:
-    - bundle exec rspec rpec/
-        environment:
-            RAILS_ENV: test
+    pre:
+        - wget -O geckodriver-v0.13.0-linux64.tar.gz https://github.com/mozilla/geckodriver/releases/download/v0.13.0/geckodriver-v0.13.0-linux64.tar.gz
+        - tar zxf geckodriver-v0.13.0-linux64.tar.gz
+        - chmod 755 geckodriver
+        - sudo cp geckodriver /usr/local/bin/
+        - echo "-----start test-----"
+    override:
+        - bundle exec rake spec/
+            environment:
+                RAILS_ENV: test
+    post:
+        - echo "-----end test-----"

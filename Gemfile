@@ -41,3 +41,9 @@ gem 'rspec-rails'
 gem 'factory_girl_rails'
 gem 'capybara'
 gem 'selenium-webdriver'
+
+gem 'redcarpet'
+gem 'backbone-on-rails'
+gem 'marked-rails'
+
+gem 'rubocop'

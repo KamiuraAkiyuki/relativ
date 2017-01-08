@@ -1,0 +1,1 @@
+json.array! @md_notes, partial: 'md_notes/md_note', as: :md_note

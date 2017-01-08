@@ -25,3 +25,949 @@ Processing by Rails::WelcomeController#index as HTML
 Completed 200 OK in 27ms (Views: 9.2ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2016-12-15 12:08:02 +0000
+Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /home/vagrant/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/railties-5.0.0.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/vagrant/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/railties-5.0.0.1/lib/rails/templates/rails/welcome/index.html.erb (3.1ms)
+Completed 200 OK in 28ms (Views: 8.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-12-15 12:10:11 +0000
+Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.0.0.1) lib/active_record/migration.rb:572:in `check_pending!'
+activerecord (5.0.0.1) lib/active_record/migration.rb:548:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:20:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0.1) lib/rails/engine.rb:522:in `call'
+unicorn (5.2.0) lib/unicorn/http_server.rb:562:in `process_client'
+unicorn (5.2.0) lib/unicorn/http_server.rb:658:in `worker_loop'
+unicorn (5.2.0) lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+unicorn (5.2.0) lib/unicorn/http_server.rb:132:in `start'
+unicorn (5.2.0) bin/unicorn_rails:209:in `<top (required)>'
+/home/vagrant/.rbenv/versions/2.3.3/bin/unicorn_rails:22:in `load'
+/home/vagrant/.rbenv/versions/2.3.3/bin/unicorn_rails:22:in `<top (required)>'
+bundler (1.13.6) lib/bundler/cli/exec.rb:74:in `load'
+bundler (1.13.6) lib/bundler/cli/exec.rb:74:in `kernel_load'
+bundler (1.13.6) lib/bundler/cli/exec.rb:27:in `run'
+bundler (1.13.6) lib/bundler/cli.rb:332:in `exec'
+bundler (1.13.6) lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+bundler (1.13.6) lib/bundler/vendor/thor/lib/thor/invocation.rb:126:in `invoke_command'
+bundler (1.13.6) lib/bundler/vendor/thor/lib/thor.rb:359:in `dispatch'
+bundler (1.13.6) lib/bundler/cli.rb:20:in `dispatch'
+bundler (1.13.6) lib/bundler/vendor/thor/lib/thor/base.rb:440:in `start'
+bundler (1.13.6) lib/bundler/cli.rb:11:in `start'
+bundler (1.13.6) exe/bundle:34:in `block in <top (required)>'
+bundler (1.13.6) lib/bundler/friendly_errors.rb:100:in `with_friendly_errors'
+bundler (1.13.6) exe/bundle:26:in `<top (required)>'
+/home/vagrant/.rbenv/versions/2.3.3/bin/bundle:22:in `load'
+/home/vagrant/.rbenv/versions/2.3.3/bin/bundle:22:in `<main>'
+  Rendering /home/vagrant/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/vagrant/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/vagrant/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (1.5ms)
+  Rendering /home/vagrant/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/vagrant/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendering /home/vagrant/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/vagrant/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/vagrant/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (23.5ms)
+  [1m[35m (101.4ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) PRIMARY KEY) ENGINE=InnoDB[0m
+  [1m[35m (8.1ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) PRIMARY KEY, `value` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT DATABASE() as db[0m
+  [1m[35m (9.1ms)[0m  [1m[34mSELECT GET_LOCK('8146912425687811020', 0);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (10.6ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateMarkdownCodes (20161215120839)
+  [1m[35m (31.1ms)[0m  [1m[35mCREATE TABLE `markdown_codes` (`id` int AUTO_INCREMENT PRIMARY KEY, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (2.1ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20161215120839')[0m
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.8ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2016-12-15 12:10:21', '2016-12-15 12:10:21')[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT RELEASE_LOCK('8146912425687811020')[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (10.4ms)[0m  [1m[35mSHOW CREATE TABLE `markdown_codes`[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'development_db'
+  AND fk.table_name = 'markdown_codes'
+[0m
+Started GET "/" for 127.0.0.1 at 2016-12-15 12:10:26 +0000
+Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by MarkdownCodesController#index as HTML
+  Rendering markdown_codes/index.html.erb within layouts/application
+  [1m[36mMarkdownCode Load (0.2ms)[0m  [1m[34mSELECT `markdown_codes`.* FROM `markdown_codes`[0m
+  Rendered markdown_codes/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 886ms (Views: 848.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/markdown_codes/new" for 127.0.0.1 at 2016-12-15 12:10:31 +0000
+Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MarkdownCodesController#new as HTML
+  Rendering markdown_codes/new.html.erb within layouts/application
+  Rendered markdown_codes/_form.html.erb (153.4ms)
+  Rendered markdown_codes/new.html.erb within layouts/application (164.5ms)
+Completed 200 OK in 483ms (Views: 361.7ms | ActiveRecord: 69.9ms)
+
+
+Started POST "/markdown_codes" for 127.0.0.1 at 2016-12-15 12:10:34 +0000
+Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MarkdownCodesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"o5TA42aDGbMoYzlgR/fA2patvGFQuXr22qpAAQFs1fk2Q7ZuknTmOvcEp9KzAHQNdw1ybUMAkGyfd8Lg/DaOHg==", "commit"=>"Create Markdown code"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (18.5ms)[0m  [1m[32mINSERT INTO `markdown_codes` (`created_at`, `updated_at`) VALUES ('2016-12-15 12:10:34', '2016-12-15 12:10:34')[0m
+  [1m[35m (20.9ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://192.168.33.10/markdown_codes/1
+Completed 302 Found in 167ms (ActiveRecord: 88.0ms)
+
+
+Started GET "/markdown_codes/1" for 127.0.0.1 at 2016-12-15 12:10:34 +0000
+Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MarkdownCodesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMarkdownCode Load (6.4ms)[0m  [1m[34mSELECT  `markdown_codes`.* FROM `markdown_codes` WHERE `markdown_codes`.`id` = 1 LIMIT 1[0m
+  Rendering markdown_codes/show.html.erb within layouts/application
+  Rendered markdown_codes/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 70ms (Views: 43.5ms | ActiveRecord: 6.4ms)
+
+
+Started GET "/markdown_codes" for 127.0.0.1 at 2016-12-15 12:10:36 +0000
+Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MarkdownCodesController#index as HTML
+  Rendering markdown_codes/index.html.erb within layouts/application
+  [1m[36mMarkdownCode Load (1.5ms)[0m  [1m[34mSELECT `markdown_codes`.* FROM `markdown_codes`[0m
+  Rendered markdown_codes/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 149ms (Views: 137.0ms | ActiveRecord: 1.5ms)
+
+
+Started DELETE "/markdown_codes/1" for 127.0.0.1 at 2016-12-15 12:10:41 +0000
+Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MarkdownCodesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"6eNFuizDK+KgIBYyWKu2Ry13lSyrcHz+FjIXT8LPYLcp8hFSLN+Cwd0MU+0mlEGUd6Bquu3vKDqvJkHDXuinuQ==", "id"=>"1"}
+  [1m[36mMarkdownCode Load (37.3ms)[0m  [1m[34mSELECT  `markdown_codes`.* FROM `markdown_codes` WHERE `markdown_codes`.`id` = 1 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (16.6ms)[0m  [1m[31mDELETE FROM `markdown_codes` WHERE `markdown_codes`.`id` = 1[0m
+  [1m[35m (11.3ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://192.168.33.10/markdown_codes
+Completed 302 Found in 119ms (ActiveRecord: 78.6ms)
+
+
+Started GET "/markdown_codes" for 127.0.0.1 at 2016-12-15 12:10:41 +0000
+Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MarkdownCodesController#index as HTML
+  Rendering markdown_codes/index.html.erb within layouts/application
+  [1m[36mMarkdownCode Load (0.3ms)[0m  [1m[34mSELECT `markdown_codes`.* FROM `markdown_codes`[0m
+  Rendered markdown_codes/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 41ms (Views: 39.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/markdown_codes" for 127.0.0.1 at 2016-12-15 13:57:02 +0000
+Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MarkdownCodesController#index as HTML
+  Rendering markdown_codes/index.html.erb within layouts/application
+  [1m[36mMarkdownCode Load (0.3ms)[0m  [1m[34mSELECT `markdown_codes`.* FROM `markdown_codes`[0m
+  Rendered markdown_codes/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 72ms (Views: 67.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-12-15 13:57:25 +0000
+Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MarkdownCodesController#index as HTML
+  Rendering markdown_codes/index.html.erb within layouts/application
+  [1m[36mMarkdownCode Load (0.2ms)[0m  [1m[34mSELECT `markdown_codes`.* FROM `markdown_codes`[0m
+  Rendered markdown_codes/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 35ms (Views: 33.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-12-15 13:58:22 +0000
+Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MarkdownCodesController#index as HTML
+  Rendering markdown_codes/index.html.erb within layouts/application
+  Rendered markdown_codes/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 40ms (Views: 37.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-12-15 13:59:13 +0000
+Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MarkdownCodesController#index as HTML
+  Rendering markdown_codes/index.html.erb within layouts/application
+  [1m[36mMarkdownCode Load (0.2ms)[0m  [1m[34mSELECT `markdown_codes`.* FROM `markdown_codes`[0m
+  Rendered markdown_codes/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 57ms (Views: 55.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/markdown_codes/new" for 127.0.0.1 at 2016-12-15 13:59:14 +0000
+Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MarkdownCodesController#new as HTML
+  Rendering markdown_codes/new.html.erb within layouts/application
+  Rendered markdown_codes/_form.html.erb (12.8ms)
+  Rendered markdown_codes/new.html.erb within layouts/application (15.7ms)
+Completed 200 OK in 92ms (Views: 84.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/markdown_codes" for 127.0.0.1 at 2016-12-15 13:59:17 +0000
+Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MarkdownCodesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LEM+cayjfMZXV3nBx7AyNxxlbhk6DSnoMy1RP0aLmpa5lEj8WFSDT4gw53MzR4bg/cWgFSm0w3J28NPeu9HBcQ==", "commit"=>"Create Markdown code"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (13.9ms)[0m  [1m[32mINSERT INTO `markdown_codes` (`created_at`, `updated_at`) VALUES ('2016-12-15 13:59:17', '2016-12-15 13:59:17')[0m
+  [1m[35m (17.7ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://192.168.33.10/markdown_codes/2
+Completed 302 Found in 47ms (ActiveRecord: 31.7ms)
+
+
+Started GET "/markdown_codes/2" for 127.0.0.1 at 2016-12-15 13:59:17 +0000
+Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MarkdownCodesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mMarkdownCode Load (0.3ms)[0m  [1m[34mSELECT  `markdown_codes`.* FROM `markdown_codes` WHERE `markdown_codes`.`id` = 2 LIMIT 1[0m
+  Rendering markdown_codes/show.html.erb within layouts/application
+  Rendered markdown_codes/show.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 45ms (Views: 39.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/markdown_codes/2/edit" for 127.0.0.1 at 2016-12-15 13:59:36 +0000
+Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MarkdownCodesController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mMarkdownCode Load (0.5ms)[0m  [1m[34mSELECT  `markdown_codes`.* FROM `markdown_codes` WHERE `markdown_codes`.`id` = 2 LIMIT 1[0m
+  Rendering markdown_codes/edit.html.erb within layouts/application
+  Rendered markdown_codes/_form.html.erb (13.1ms)
+  Rendered markdown_codes/edit.html.erb within layouts/application (19.8ms)
+Completed 200 OK in 197ms (Views: 185.5ms | ActiveRecord: 0.5ms)
+
+
+Started PATCH "/markdown_codes/2" for 127.0.0.1 at 2016-12-15 13:59:39 +0000
+Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MarkdownCodesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"M6H6TJfsbFG/IWhDEzosgJ7WaiJpE2ILEURokq1rYulZsG6po7bafqfRBN8nUmUEXNuazdj0L0NFQ5DGCSOetA==", "commit"=>"Update Markdown code", "id"=>"2"}
+  [1m[36mMarkdownCode Load (0.3ms)[0m  [1m[34mSELECT  `markdown_codes`.* FROM `markdown_codes` WHERE `markdown_codes`.`id` = 2 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://192.168.33.10/markdown_codes/2
+Completed 302 Found in 5ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/markdown_codes/2" for 127.0.0.1 at 2016-12-15 13:59:39 +0000
+Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MarkdownCodesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mMarkdownCode Load (0.2ms)[0m  [1m[34mSELECT  `markdown_codes`.* FROM `markdown_codes` WHERE `markdown_codes`.`id` = 2 LIMIT 1[0m
+  Rendering markdown_codes/show.html.erb within layouts/application
+  Rendered markdown_codes/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 137ms (Views: 133.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/markdown_codes/2/edit" for 127.0.0.1 at 2016-12-15 13:59:40 +0000
+Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MarkdownCodesController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mMarkdownCode Load (0.3ms)[0m  [1m[34mSELECT  `markdown_codes`.* FROM `markdown_codes` WHERE `markdown_codes`.`id` = 2 LIMIT 1[0m
+  Rendering markdown_codes/edit.html.erb within layouts/application
+  Rendered markdown_codes/_form.html.erb (2.5ms)
+  Rendered markdown_codes/edit.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 59ms (Views: 56.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/markdown_codes/2" for 127.0.0.1 at 2016-12-15 13:59:44 +0000
+Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MarkdownCodesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mMarkdownCode Load (0.3ms)[0m  [1m[34mSELECT  `markdown_codes`.* FROM `markdown_codes` WHERE `markdown_codes`.`id` = 2 LIMIT 1[0m
+  Rendering markdown_codes/show.html.erb within layouts/application
+  Rendered markdown_codes/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 47ms (Views: 36.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/markdown_codes" for 127.0.0.1 at 2016-12-15 13:59:45 +0000
+Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MarkdownCodesController#index as HTML
+  Rendering markdown_codes/index.html.erb within layouts/application
+  [1m[36mMarkdownCode Load (1.2ms)[0m  [1m[34mSELECT `markdown_codes`.* FROM `markdown_codes`[0m
+  Rendered markdown_codes/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 77ms (Views: 65.2ms | ActiveRecord: 1.2ms)
+
+
+Started DELETE "/markdown_codes/2" for 127.0.0.1 at 2016-12-15 13:59:49 +0000
+Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MarkdownCodesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"TNvv5qVyRiDlHvL/WeAB1dCG5/NTcOmk2GRHCr7yG5KMyrsOpW7vA5gytyAn3/YGilEYZRXvvWBhcBGGItXcnA==", "id"=>"2"}
+  [1m[36mMarkdownCode Load (0.3ms)[0m  [1m[34mSELECT  `markdown_codes`.* FROM `markdown_codes` WHERE `markdown_codes`.`id` = 2 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (53.6ms)[0m  [1m[31mDELETE FROM `markdown_codes` WHERE `markdown_codes`.`id` = 2[0m
+  [1m[35m (10.1ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://192.168.33.10/markdown_codes
+Completed 302 Found in 67ms (ActiveRecord: 64.1ms)
+
+
+Started GET "/markdown_codes" for 127.0.0.1 at 2016-12-15 13:59:49 +0000
+Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MarkdownCodesController#index as HTML
+  Rendering markdown_codes/index.html.erb within layouts/application
+  [1m[36mMarkdownCode Load (0.4ms)[0m  [1m[34mSELECT `markdown_codes`.* FROM `markdown_codes`[0m
+  Rendered markdown_codes/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 38ms (Views: 36.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/markdown_codes" for 127.0.0.1 at 2016-12-15 14:03:33 +0000
+Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MarkdownCodesController#index as HTML
+  Rendering markdown_codes/index.html.erb within layouts/application
+  [1m[36mMarkdownCode Load (0.2ms)[0m  [1m[34mSELECT `markdown_codes`.* FROM `markdown_codes`[0m
+  Rendered markdown_codes/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 71ms (Views: 68.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-12-15 14:08:57 +0000
+Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MarkdownCodesController#index as HTML
+  Rendering markdown_codes/index.html.erb within layouts/application
+  [1m[36mMarkdownCode Load (0.2ms)[0m  [1m[34mSELECT `markdown_codes`.* FROM `markdown_codes`[0m
+  Rendered markdown_codes/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 43ms (Views: 40.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/markdown_codes/new" for 127.0.0.1 at 2016-12-15 14:08:59 +0000
+Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MarkdownCodesController#new as HTML
+  Rendering markdown_codes/new.html.erb within layouts/application
+  Rendered markdown_codes/_form.html.erb (2.2ms)
+  Rendered markdown_codes/new.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 52ms (Views: 43.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/markdown_codes/new" for 127.0.0.1 at 2016-12-15 14:11:45 +0000
+Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/markdown_codes/new"):
+  
+actionpack (5.0.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:20:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0.1) lib/rails/engine.rb:522:in `call'
+unicorn (5.2.0) lib/unicorn/http_server.rb:562:in `process_client'
+unicorn (5.2.0) lib/unicorn/http_server.rb:658:in `worker_loop'
+unicorn (5.2.0) lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+unicorn (5.2.0) lib/unicorn/http_server.rb:132:in `start'
+unicorn (5.2.0) bin/unicorn_rails:209:in `<top (required)>'
+/home/vagrant/.rbenv/versions/2.3.3/bin/unicorn_rails:22:in `load'
+/home/vagrant/.rbenv/versions/2.3.3/bin/unicorn_rails:22:in `<top (required)>'
+bundler (1.13.6) lib/bundler/cli/exec.rb:74:in `load'
+bundler (1.13.6) lib/bundler/cli/exec.rb:74:in `kernel_load'
+bundler (1.13.6) lib/bundler/cli/exec.rb:27:in `run'
+bundler (1.13.6) lib/bundler/cli.rb:332:in `exec'
+bundler (1.13.6) lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+bundler (1.13.6) lib/bundler/vendor/thor/lib/thor/invocation.rb:126:in `invoke_command'
+bundler (1.13.6) lib/bundler/vendor/thor/lib/thor.rb:359:in `dispatch'
+bundler (1.13.6) lib/bundler/cli.rb:20:in `dispatch'
+bundler (1.13.6) lib/bundler/vendor/thor/lib/thor/base.rb:440:in `start'
+bundler (1.13.6) lib/bundler/cli.rb:11:in `start'
+bundler (1.13.6) exe/bundle:34:in `block in <top (required)>'
+bundler (1.13.6) lib/bundler/friendly_errors.rb:100:in `with_friendly_errors'
+bundler (1.13.6) exe/bundle:26:in `<top (required)>'
+/home/vagrant/.rbenv/versions/2.3.3/bin/bundle:22:in `load'
+/home/vagrant/.rbenv/versions/2.3.3/bin/bundle:22:in `<main>'
+  Rendering /home/vagrant/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home/vagrant/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/vagrant/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendered /home/vagrant/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (38.4ms)
+  Rendering /home/vagrant/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/vagrant/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.9ms)
+  Rendered /home/vagrant/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (68.6ms)
+Started GET "/" for 127.0.0.1 at 2016-12-15 14:11:47 +0000
+Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /home/vagrant/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/railties-5.0.0.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/vagrant/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/railties-5.0.0.1/lib/rails/templates/rails/welcome/index.html.erb (3.3ms)
+Completed 200 OK in 7ms (Views: 4.4ms | ActiveRecord: 0.0ms)
+
+
+  [1m[36mActiveRecord::SchemaMigration Load (19.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (3.8ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  [1m[35m (61.0ms)[0m  [1m[35mDROP TABLE `markdown_codes` CASCADE[0m
+  [1m[35m (100.3ms)[0m  [1m[35mCREATE TABLE `markdown_codes` (`id` int AUTO_INCREMENT PRIMARY KEY, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT version FROM `schema_migrations`[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.8ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (6.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (21.3ms)[0m  [1m[35mCREATE TABLE `markdown_codes` (`id` int AUTO_INCREMENT PRIMARY KEY, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci[0m
+  [1m[35m (19.2ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) PRIMARY KEY) ENGINE=InnoDB[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT version FROM `schema_migrations`[0m
+  [1m[35m (1.8ms)[0m  [1m[32mINSERT INTO `schema_migrations` (version) VALUES ('20161215120839')[0m
+  [1m[35m (8.1ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) PRIMARY KEY, `value` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.2ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.3ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2016-12-15 14:12:31', '2016-12-15 14:12:31')[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (6.9ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  [1m[35m (69.7ms)[0m  [1m[35mDROP DATABASE IF EXISTS `development_db`[0m
+  [1m[35m (18.5ms)[0m  [1m[35mDROP DATABASE IF EXISTS `test_db`[0m
+  [1m[35m (49.6ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) PRIMARY KEY) ENGINE=InnoDB[0m
+  [1m[35m (17.2ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) PRIMARY KEY, `value` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT DATABASE() as db[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT GET_LOCK('8146912425687811020', 0);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (8.0ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateMdNotes (20161215141808)
+  [1m[35m (11.1ms)[0m  [1m[35mCREATE TABLE `md_notes` (`id` int AUTO_INCREMENT PRIMARY KEY, `title` varchar(255), `content` text, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.5ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20161215141808')[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2016-12-15 14:20:46', '2016-12-15 14:20:46')[0m
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT RELEASE_LOCK('8146912425687811020')[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (9.5ms)[0m  [1m[35mSHOW CREATE TABLE `md_notes`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'md_notes'[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'development_db'
+  AND fk.table_name = 'md_notes'
+[0m
+Started GET "/" for 127.0.0.1 at 2016-12-15 14:21:19 +0000
+Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (8.8ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /home/vagrant/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/railties-5.0.0.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/vagrant/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/railties-5.0.0.1/lib/rails/templates/rails/welcome/index.html.erb (4.3ms)
+Completed 200 OK in 15ms (Views: 5.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/md_notes" for 127.0.0.1 at 2016-12-15 14:21:26 +0000
+Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by MdNotesController#index as HTML
+  Rendering md_notes/index.html.erb within layouts/application
+  [1m[36mMdNote Load (0.3ms)[0m  [1m[34mSELECT `md_notes`.* FROM `md_notes`[0m
+  Rendered md_notes/index.html.erb within layouts/application (31.6ms)
+Completed 500 Internal Server Error in 479ms (ActiveRecord: 24.5ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'underscore' with type 'application/javascript'
+Checked in these paths: 
+  /var/www/html/app/assets/config
+  /var/www/html/app/assets/images
+  /var/www/html/app/assets/javascripts
+  /var/www/html/app/assets/stylesheets
+  /var/www/html/lib/assets/javascripts
+  /var/www/html/vendor/assets/javascripts
+  /var/www/html/vendor/assets/stylesheets
+  /home/vagrant/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/jquery-rails-4.2.1/vendor/assets/javascripts
+  /home/vagrant/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/coffee-rails-4.2.1/lib/assets/javascripts
+  /home/vagrant/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actioncable-5.0.0.1/lib/assets/compiled
+  /home/vagrant/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/turbolinks-source-5.0.0/lib/assets/javascripts):
+     5:     <%= csrf_meta_tags %>
+     6: 
+     7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+     9:   </head>
+    10: 
+    11:   <body>
+  
+app/assets/javascripts/application.js:16
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb__1512327528325306761_70264731432180'
+  Rendering /home/vagrant/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /home/vagrant/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/vagrant/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.8ms)
+  Rendering /home/vagrant/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/vagrant/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendering /home/vagrant/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/vagrant/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/vagrant/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (24.2ms)
+Started GET "/md_notes" for 127.0.0.1 at 2016-12-15 14:27:25 +0000
+Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (17.4ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by MdNotesController#index as HTML
+  Rendering md_notes/index.html.erb within layouts/application
+  [1m[36mMdNote Load (0.3ms)[0m  [1m[34mSELECT `md_notes`.* FROM `md_notes`[0m
+  Rendered md_notes/index.html.erb within layouts/application (12.1ms)
+Completed 500 Internal Server Error in 405ms (ActiveRecord: 4.3ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'underscore' with type 'application/javascript'
+Checked in these paths: 
+  /var/www/html/app/assets/config
+  /var/www/html/app/assets/images
+  /var/www/html/app/assets/javascripts
+  /var/www/html/app/assets/stylesheets
+  /var/www/html/lib/assets/javascripts
+  /var/www/html/vendor/assets/javascripts
+  /var/www/html/vendor/assets/stylesheets
+  /home/vagrant/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/jquery-rails-4.2.1/vendor/assets/javascripts
+  /home/vagrant/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/coffee-rails-4.2.1/lib/assets/javascripts
+  /home/vagrant/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actioncable-5.0.0.1/lib/assets/compiled
+  /home/vagrant/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/turbolinks-source-5.0.0/lib/assets/javascripts):
+     5:     <%= csrf_meta_tags %>
+     6: 
+     7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+     9:   </head>
+    10: 
+    11:   <body>
+  
+app/assets/javascripts/application.js:16
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb__1512327528325306761_70264712378920'
+  Rendering /home/vagrant/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /home/vagrant/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/vagrant/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.1ms)
+  Rendering /home/vagrant/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/vagrant/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendering /home/vagrant/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/vagrant/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.9ms)
+  Rendered /home/vagrant/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (26.2ms)
+Started GET "/md_notes" for 127.0.0.1 at 2016-12-15 14:28:21 +0000
+Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MdNotesController#index as HTML
+  Rendering md_notes/index.html.erb within layouts/application
+  [1m[36mMdNote Load (16.9ms)[0m  [1m[34mSELECT `md_notes`.* FROM `md_notes`[0m
+  Rendered md_notes/index.html.erb within layouts/application (18.6ms)
+Completed 500 Internal Server Error in 40ms (ActiveRecord: 16.9ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'underscore' with type 'application/javascript'
+Checked in these paths: 
+  /var/www/html/app/assets/config
+  /var/www/html/app/assets/images
+  /var/www/html/app/assets/javascripts
+  /var/www/html/app/assets/stylesheets
+  /var/www/html/lib/assets/javascripts
+  /var/www/html/vendor/assets/javascripts
+  /var/www/html/vendor/assets/stylesheets
+  /home/vagrant/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/jquery-rails-4.2.1/vendor/assets/javascripts
+  /home/vagrant/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/coffee-rails-4.2.1/lib/assets/javascripts
+  /home/vagrant/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actioncable-5.0.0.1/lib/assets/compiled
+  /home/vagrant/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/turbolinks-source-5.0.0/lib/assets/javascripts):
+     5:     <%= csrf_meta_tags %>
+     6: 
+     7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+     9:   </head>
+    10: 
+    11:   <body>
+  
+app/assets/javascripts/application.js:16
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb__1512327528325306761_70264751181180'
+  Rendering /home/vagrant/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /home/vagrant/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/vagrant/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.6ms)
+  Rendering /home/vagrant/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/vagrant/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendering /home/vagrant/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/vagrant/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /home/vagrant/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (29.4ms)
+Started GET "/md_notes" for 127.0.0.1 at 2016-12-15 14:28:25 +0000
+Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MdNotesController#index as HTML
+  Rendering md_notes/index.html.erb within layouts/application
+  [1m[36mMdNote Load (26.6ms)[0m  [1m[34mSELECT `md_notes`.* FROM `md_notes`[0m
+  Rendered md_notes/index.html.erb within layouts/application (83.1ms)
+Completed 500 Internal Server Error in 302ms (ActiveRecord: 43.4ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'underscore' with type 'application/javascript'
+Checked in these paths: 
+  /var/www/html/app/assets/config
+  /var/www/html/app/assets/images
+  /var/www/html/app/assets/javascripts
+  /var/www/html/app/assets/stylesheets
+  /var/www/html/lib/assets/javascripts
+  /var/www/html/vendor/assets/javascripts
+  /var/www/html/vendor/assets/stylesheets
+  /home/vagrant/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/jquery-rails-4.2.1/vendor/assets/javascripts
+  /home/vagrant/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/coffee-rails-4.2.1/lib/assets/javascripts
+  /home/vagrant/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actioncable-5.0.0.1/lib/assets/compiled
+  /home/vagrant/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/turbolinks-source-5.0.0/lib/assets/javascripts):
+     5:     <%= csrf_meta_tags %>
+     6: 
+     7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+     9:   </head>
+    10: 
+    11:   <body>
+  
+app/assets/javascripts/application.js:16
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb__1512327528325306761_70264751116980'
+  Rendering /home/vagrant/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /home/vagrant/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/vagrant/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (44.0ms)
+  Rendering /home/vagrant/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/vagrant/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (11.7ms)
+  Rendering /home/vagrant/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/vagrant/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (10.7ms)
+  Rendered /home/vagrant/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (91.5ms)
+Started GET "/md_notes" for 127.0.0.1 at 2016-12-15 14:28:27 +0000
+Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MdNotesController#index as HTML
+  Rendering md_notes/index.html.erb within layouts/application
+  [1m[36mMdNote Load (49.4ms)[0m  [1m[34mSELECT `md_notes`.* FROM `md_notes`[0m
+  Rendered md_notes/index.html.erb within layouts/application (51.5ms)
+Completed 500 Internal Server Error in 95ms (ActiveRecord: 49.4ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'underscore' with type 'application/javascript'
+Checked in these paths: 
+  /var/www/html/app/assets/config
+  /var/www/html/app/assets/images
+  /var/www/html/app/assets/javascripts
+  /var/www/html/app/assets/stylesheets
+  /var/www/html/lib/assets/javascripts
+  /var/www/html/vendor/assets/javascripts
+  /var/www/html/vendor/assets/stylesheets
+  /home/vagrant/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/jquery-rails-4.2.1/vendor/assets/javascripts
+  /home/vagrant/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/coffee-rails-4.2.1/lib/assets/javascripts
+  /home/vagrant/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actioncable-5.0.0.1/lib/assets/compiled
+  /home/vagrant/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/turbolinks-source-5.0.0/lib/assets/javascripts):
+     5:     <%= csrf_meta_tags %>
+     6: 
+     7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+     9:   </head>
+    10: 
+    11:   <body>
+  
+app/assets/javascripts/application.js:16
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb__1512327528325306761_70264760616800'
+  Rendering /home/vagrant/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /home/vagrant/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/vagrant/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.3ms)
+  Rendering /home/vagrant/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/vagrant/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendering /home/vagrant/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/vagrant/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/vagrant/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (23.9ms)
+Started GET "/md_notes" for 127.0.0.1 at 2016-12-15 14:28:50 +0000
+Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MdNotesController#index as HTML
+  Rendering md_notes/index.html.erb within layouts/application
+  [1m[36mMdNote Load (0.3ms)[0m  [1m[34mSELECT `md_notes`.* FROM `md_notes`[0m
+  Rendered md_notes/index.html.erb within layouts/application (1.5ms)
+Completed 500 Internal Server Error in 30ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'underscore' with type 'application/javascript'
+Checked in these paths: 
+  /var/www/html/app/assets/config
+  /var/www/html/app/assets/images
+  /var/www/html/app/assets/javascripts
+  /var/www/html/app/assets/stylesheets
+  /var/www/html/lib/assets/javascripts
+  /var/www/html/vendor/assets/javascripts
+  /var/www/html/vendor/assets/stylesheets
+  /home/vagrant/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/jquery-rails-4.2.1/vendor/assets/javascripts
+  /home/vagrant/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/coffee-rails-4.2.1/lib/assets/javascripts
+  /home/vagrant/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actioncable-5.0.0.1/lib/assets/compiled
+  /home/vagrant/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/turbolinks-source-5.0.0/lib/assets/javascripts):
+     5:     <%= csrf_meta_tags %>
+     6: 
+     7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+     9:   </head>
+    10: 
+    11:   <body>
+  
+app/assets/javascripts/application.js:16
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb__1512327528325306761_70264749716400'
+  Rendering /home/vagrant/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /home/vagrant/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/vagrant/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.5ms)
+  Rendering /home/vagrant/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/vagrant/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendering /home/vagrant/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/vagrant/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/vagrant/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (29.8ms)
+Started GET "/md_notes" for 127.0.0.1 at 2016-12-15 14:31:11 +0000
+Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (53.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by MdNotesController#index as HTML
+  Rendering md_notes/index.html.erb within layouts/application
+  [1m[36mMdNote Load (12.0ms)[0m  [1m[34mSELECT `md_notes`.* FROM `md_notes`[0m
+  Rendered md_notes/index.html.erb within layouts/application (38.9ms)
+Completed 200 OK in 1232ms (Views: 1148.0ms | ActiveRecord: 13.8ms)
+
+
+Started GET "/md_notes" for 127.0.0.1 at 2016-12-15 14:32:20 +0000
+Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MdNotesController#index as HTML
+  Rendering md_notes/index.html.erb within layouts/application
+  [1m[36mMdNote Load (14.3ms)[0m  [1m[34mSELECT `md_notes`.* FROM `md_notes`[0m
+  Rendered md_notes/index.html.erb within layouts/application (52.6ms)
+Completed 200 OK in 304ms (Views: 206.2ms | ActiveRecord: 32.4ms)
+
+
+Started GET "/md_notes/new" for 127.0.0.1 at 2016-12-15 14:32:24 +0000
+Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MdNotesController#new as HTML
+  Rendering md_notes/new.html.erb within layouts/application
+  Rendered md_notes/_form.html.erb (18.8ms)
+  Rendered md_notes/new.html.erb within layouts/application (28.5ms)
+Completed 500 Internal Server Error in 116ms (ActiveRecord: 29.1ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `f' for #<#<Class:0x007f2ea2bfa680>:0x007f2ea2bbc2b8>):
+    1: <div class="field" id="markdown_editor">
+    2:     <%= f.label :content %><br>
+    3:     <%= f.text_area :content,class: 'box', size: '40x20' %>
+    4: </div>
+  
+app/views/md_notes/_form.html.erb:2:in `_app_views_md_notes__form_html_erb__2506487932667065552_69919137106500'
+app/views/md_notes/new.html.erb:3:in `_app_views_md_notes_new_html_erb___2073564658297105220_69919137848280'
+  Rendering /home/vagrant/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /home/vagrant/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/vagrant/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.8ms)
+  Rendering /home/vagrant/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/vagrant/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendering /home/vagrant/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/vagrant/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/vagrant/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (25.8ms)
+Started GET "/md_notes/new" for 127.0.0.1 at 2016-12-15 14:32:42 +0000
+Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MdNotesController#new as HTML
+  Rendering md_notes/new.html.erb within layouts/application
+  Rendered md_notes/_form.html.erb (21.5ms)
+  Rendered md_notes/new.html.erb within layouts/application (23.4ms)
+Completed 200 OK in 167ms (Views: 164.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/md_notes/new" for 127.0.0.1 at 2016-12-15 14:33:04 +0000
+Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MdNotesController#new as HTML
+  Rendering md_notes/new.html.erb within layouts/application
+  Rendered md_notes/_form.html.erb (43.2ms)
+  Rendered md_notes/new.html.erb within layouts/application (45.2ms)
+Completed 200 OK in 175ms (Views: 107.2ms | ActiveRecord: 59.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-01-08 09:38:45 +0000
+Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /home/vagrant/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/railties-5.0.0.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/vagrant/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/railties-5.0.0.1/lib/rails/templates/rails/welcome/index.html.erb (6.2ms)
+Completed 200 OK in 16ms (Views: 9.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/md_notes" for 127.0.0.1 at 2017-01-08 09:39:23 +0000
+Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MdNotesController#index as HTML
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/var/www/html/app/models/md_note.rb:1: syntax error, unexpected tIDENTIFIER, expecting &. or :: or '[' or '.'
+class StickitSample.Models.MdNote extends Backbone.Model
+                                         ^
+/var/www/html/app/models/md_note.rb:2: syntax error, unexpected keyword_end, expecting end-of-input):
+  
+app/models/md_note.rb:1: syntax error, unexpected tIDENTIFIER, expecting &. or :: or '[' or '.'
+app/models/md_note.rb:2: syntax error, unexpected keyword_end, expecting end-of-input
+app/controllers/md_notes_controller.rb:7:in `index'
+  Rendering /home/vagrant/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/vagrant/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/vagrant/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.3ms)
+  Rendering /home/vagrant/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/vagrant/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendering /home/vagrant/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/vagrant/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/vagrant/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (23.3ms)
+Started GET "/knowledges" for 127.0.0.1 at 2017-01-08 09:41:18 +0000
+Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (13.1ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.0.0.1) lib/active_record/migration.rb:572:in `check_pending!'
+activerecord (5.0.0.1) lib/active_record/migration.rb:548:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:20:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0.1) lib/rails/engine.rb:522:in `call'
+unicorn (5.2.0) lib/unicorn/http_server.rb:562:in `process_client'
+unicorn (5.2.0) lib/unicorn/http_server.rb:658:in `worker_loop'
+unicorn (5.2.0) lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+unicorn (5.2.0) lib/unicorn/http_server.rb:132:in `start'
+unicorn (5.2.0) bin/unicorn_rails:209:in `<top (required)>'
+/home/vagrant/.rbenv/versions/2.3.3/bin/unicorn_rails:22:in `load'
+/home/vagrant/.rbenv/versions/2.3.3/bin/unicorn_rails:22:in `<top (required)>'
+bundler (1.13.6) lib/bundler/cli/exec.rb:74:in `load'
+bundler (1.13.6) lib/bundler/cli/exec.rb:74:in `kernel_load'
+bundler (1.13.6) lib/bundler/cli/exec.rb:27:in `run'
+bundler (1.13.6) lib/bundler/cli.rb:332:in `exec'
+bundler (1.13.6) lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+bundler (1.13.6) lib/bundler/vendor/thor/lib/thor/invocation.rb:126:in `invoke_command'
+bundler (1.13.6) lib/bundler/vendor/thor/lib/thor.rb:359:in `dispatch'
+bundler (1.13.6) lib/bundler/cli.rb:20:in `dispatch'
+bundler (1.13.6) lib/bundler/vendor/thor/lib/thor/base.rb:440:in `start'
+bundler (1.13.6) lib/bundler/cli.rb:11:in `start'
+bundler (1.13.6) exe/bundle:34:in `block in <top (required)>'
+bundler (1.13.6) lib/bundler/friendly_errors.rb:100:in `with_friendly_errors'
+bundler (1.13.6) exe/bundle:26:in `<top (required)>'
+/home/vagrant/.rbenv/versions/2.3.3/bin/bundle:22:in `load'
+/home/vagrant/.rbenv/versions/2.3.3/bin/bundle:22:in `<main>'
+  Rendering /home/vagrant/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/vagrant/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/vagrant/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.8ms)
+  Rendering /home/vagrant/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/vagrant/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendering /home/vagrant/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/vagrant/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/vagrant/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (24.7ms)
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT DATABASE() as db[0m
+  [1m[35m (8.5ms)[0m  [1m[34mSELECT GET_LOCK('8146912425687811020', 0);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (8.5ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateKnowledges (20170108094041)
+  [1m[35m (99.5ms)[0m  [1m[35mCREATE TABLE `knowledges` (`id` int AUTO_INCREMENT PRIMARY KEY, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (12.6ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170108094041')[0m
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (4.7ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (10.1ms)[0m  [1m[34mSELECT RELEASE_LOCK('8146912425687811020')[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (10.9ms)[0m  [1m[35mSHOW CREATE TABLE `knowledges`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW CREATE TABLE `md_notes`[0m
+  [1m[35m (0.7ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'md_notes'[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'development_db'
+  AND fk.table_name = 'knowledges'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'development_db'
+  AND fk.table_name = 'md_notes'
+[0m
+Started GET "/knowledges" for 127.0.0.1 at 2017-01-08 09:41:34 +0000
+Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by KnowledgesController#index as HTML
+  Rendering knowledges/index.html.erb within layouts/application
+  [1m[36mKnowledge Load (0.2ms)[0m  [1m[34mSELECT `knowledges`.* FROM `knowledges`[0m
+  Rendered knowledges/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 589ms (Views: 567.1ms | ActiveRecord: 1.0ms)
+
+

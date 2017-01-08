@@ -1,0 +1,17 @@
+I"(function() {
+  window.Relativ = {
+    Models: {},
+    Collections: {},
+    Views: {},
+    Routers: {},
+    initialize: function() {
+      return alert('Hello from Backbone!');
+    }
+  };
+
+  $(document).ready(function() {
+    return Relativ.initialize();
+  });
+
+}).call(this);
+:ET

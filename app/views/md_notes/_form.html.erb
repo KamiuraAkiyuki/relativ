@@ -1,0 +1,28 @@
+<%= form_for(md_note) do |f| %>
+  <% if md_note.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(md_note.errors.count, "error") %> prohibited this md_note from being saved:</h2>
+
+      <ul>
+      <% md_note.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+  </div>
+
+  <div class="field" id="markdown_editor">
+    <%= f.label :content %><br>
+    <%= f.text_area :content,class: 'box', size: '40x20' %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+
+<% end %>
